@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css?family=Hind+Madurai:300,400,500,600,700');
+
+.cf:before,
+.cf:after {
+	content: '';
+	display: table;
+}
+.cf:after {
+	clear:both;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.navbar-custom {
+background-color: #181515;
+border-color: #181515;
+border-radius: 0px;
+color: #FFFFFF;
+font-family: 'Hind Madurai', sans-serif;
+}
+
+.navbar .nav > li > a {
+  color: white;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 15px;
+}
+
+.navbar .nav > li > a:hover {
+  color: white;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 15px;
+  opacity: .8;
+}
+
+/*This will let you scroll page content over cover image*/
+
+.header {
+   background: url('../img/jessica-header2.jpg') no-repeat top center fixed;
+   background-size: cover;
+   height: 500px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   color: white;
+   text-align: center;
+   font-size: 50px;
+   top: 50%;
+   margin-top: -25px;
+}
+
+
+.header h1 {
+	position: absolute;
+	width: 100%;
+	font-size: 70px;
+	top: 35%;
+	font-family: 'Hind Madurai', sans-serif;
+	font-weight: 500;
+  line-height: 70px;
+}
+
+.header h1 span {
+	font-size: 40px;
+	font-weight: 400;
+}
+
+.gray-wrapper {
+	background-color: #dedede;
+	margin-top: 50px;
+}
+
+.black-wrapper {
+	background-color: #181515;
+	margin-top: 0px;
+	position: relative;
+  margin-top: 100px;
+}
+
+.black-wrapper:after{
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -50px;
+    width: 0;
+    height: 0;
+    border-top: solid 50px #181515;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+}
+
+
+.intro {
+	font-size: 25px;
+	font-family: 'Hind Madurai', sans-serif;
+	margin-top: 50px;
+	margin-left: 15px;
+	margin-bottom: 25px;
+}
+
+.intro h3 {
+	font-size: 35px;
+}
+
+.featured-work h3{
+  font-size: 35px;
+  font-family: 'Hind Madurai', sans-serif;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.no-padding {
+	margin-left: 0 !important;
+}
+
+
+/*This will flip over the portfolio images with descriptions ======================*/
+
+
+.portfolio-imgs img { 
+	width: 100%;
+	height: auto;
+	display: block;
+	margin-top: 30px;
+}
+
+
+.portfolio-imgs figure {
+    margin:0;
+    padding:0;
+    position:relative;
+    cursor:pointer;
+}
+
+.portfolio-imgs figure img {
+    display:block;
+    position:relative;
+    z-index:10;
+}
+
+.portfolio-imgs figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+.portfolio-imgs figure h2 {
+    font-family: 'Hind Madurai', sans-serif;
+    color:#fff;
+    font-size:20px;
+    text-align:left
+}
+
+.portfolio-imgs figure p {
+    display:block;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size:12px;
+    line-height:18px;
+    margin:0;
+    color:#fff;
+    text-align:left
+}
+
+.portfolio-imgs figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:29px 44px;
+    background-color: #1a77f0;
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.portfolio-imgs figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+
+.portfolio-imgs figure:hover img,figure.hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+
+.portfolio-imgs figure:hover figcaption,figure.hover figcaption {
+    -webkit-transform:rotateY(0);
+    -moz-transform:rotateY(0);
+    transform:rotateY(0)
+}
+
+/*end ====================================================*/
+
+.view-more {
+  height: 36px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-family: 'Hind Madurai', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 50px;
+  padding: 6px;
+}
+
+.view-more:hover{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+
+.outro {
+	font-size: 25px;
+	font-family: 'Hind Madurai', sans-serif;
+	margin-top: 50px;
+	margin-left: 15px;
+	padding-bottom: 65px;
+	color: #ffffff;
+}
+
+.outro h3 {
+	font-size: 35px;
+	color: #ffffff;
+}
+
+.footer {
+   background: url('../img/footer-dark.jpg') no-repeat top center fixed;
+   background-size: cover;
+   height: 500px;
+   width: 100%;
+   margin-top: -25px;
+   padding: 0;
+   color: white;
+   text-align: center;
+   top: 50%;
+}
+
+.footer-text {
+	margin-top: 140px;
+	position: absolute;
+	width: 100%;
+	font-family: 'Hind Madurai', sans-serif;
+}
+
+.footer-text h3 {
+	font-size: 65px;
+	text-align: center;
+}
+
+.footer button {
+	width: 350px;
+	height: 70px;
+	border-radius: 10px;
+	font-size: 35px;
+	font-family: 'Hind Madurai', sans-serif;
+	background-color: #e23737;
+	border: none;
+  margin-top: 25px;
+}
+
+.footer button:hover{
+  background-color: #d32e2e;
+ }
+
+.black-footer {
+	background-color: #181515;
+	margin-top: 0px;
+	position: relative;
+	padding: 15px;
+	font-size: 15px;
+	color: #878889;
+}
+
+
+/*Portfolio All Page ==========================================*/
+
+.header-port-all {
+   background: url('../img/all-work.jpg') no-repeat top center fixed;
+   background-size: cover;
+   height: 500px;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   color: white;
+   text-align: center;
+   font-size: 50px;
+   top: 50%;
+   margin-top: -25px;
+}
+
+
+.header-port-all h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 70px;
+  top: 35%;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 500;
+}
+
+.header-port-all h3 {
+  position: absolute;
+  width: 100%;
+  font-size: 40px;
+  top: 50%;
+  font-family: 'Hind Madurai', sans-serif;
+  font-weight: 400;
+}
+
+.featured-work-all h3{
+  font-size: 35px;
+  font-family: 'Hind Madurai', sans-serif;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  text-align: center;
+}
